@@ -1006,7 +1006,7 @@ img {
 .macbook__text-box {
   max-width: 600px;
   left: 50%;
-  top: 30px;
+  top: 50px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
@@ -1020,5 +1020,24 @@ img {
 
 .macbook__btn {
   background: #f8891b;
+}
+
+.phone__usd {
+  color: #da465b;
+}
+
+.phone__title {
+  font-size: 2.3rem;
+}
+
+.phone__desc {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 45px;
+}
+
+.phone__btn {
+  background: #da465b;
 }
 /*# sourceMappingURL=main.css.map */
