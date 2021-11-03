@@ -1,0 +1,249 @@
+.header {
+    padding: 35px 0;
+    background-color: #105caa;
+
+
+    &__logo-link {
+        width: 176px;
+        height: 27px;
+        display:inline-block;
+        background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/files/logo_1128979b-f391-432e-b408-12fa16768dc7_300x.png?v=1603187690");
+        background-repeat: no-repeat;
+        background-size: 176px 27px;
+    }
+
+
+    &__form {
+        width:50%;
+        background: #fff;
+        border-radius:40px;
+        padding: 10px 10px 10px 20px;
+    }
+
+    &__inp {
+        width: 100%;
+        padding: 5px;
+        background: none;
+        border: none;
+
+        &::placeholder{
+            color: #cccbcb;
+            font-size: 13px;
+        }
+    }
+
+    &__search-btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;  
+        border: none; 
+        font-size: 20px;
+        color: #105caa;
+    }   
+
+
+    &__btn {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self:center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        text-decoration: none;
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+
+    &__btn--settings{
+        margin-right: 0 !important;
+    }
+
+
+    .shop-count{
+        position:absolute;
+        top: -19px;
+        left: 50%;
+        transform: translate(-50%,0);
+        font-size: 10px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 19px;
+        height: 19px;
+        background: #fd6666;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    &__btn i{
+        font-size: 30px;
+        color: #fff;
+        transition: color 0.4s ease;
+    }
+
+    
+
+    .settings-icon{
+        width: 30px;
+        fill: #fff;
+        transition: fill 0.4s ease;
+    }
+
+    &__btn:hover i{
+        color: #fd6666;
+        
+    }
+
+    &__btn:hover .settings-icon{
+        fill: #fd6666;
+    }
+
+    &__btn-name{
+        display: none;
+        font-family: $roboto-font;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1;
+        color: #bebebe;
+    }
+    
+    &__burger-btn-box{
+        display: none;
+    }
+
+    &__burger-btn{
+        cursor: pointer;
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #222;
+        font-size: 30px;
+    }
+
+    &__btn--top-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+    }
+
+}
+
+.bx-home{
+    display: none;
+}
+
+.header__btn--top{
+    display: none;
+}
+
+@media screen and (max-width:970px){
+    .header__form{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .header__btns{
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 5px 15px;
+        justify-content: center;
+    }
+
+
+    .header__btn i{
+        color:#000 ;
+    }
+
+    .settings-icon{
+        fill: #000 !important;
+    }
+
+    .header__burger-btn-box{
+        display: block;
+    }
+
+    .header__form{
+        width: 60%;
+    }
+
+    .header{
+        padding: 10px 0;
+        background: #fff;
+    }
+    
+    .header__btn--settings{
+        margin-right: 30px !important;
+    }
+
+    .header__form{
+        padding: 4px 4px 4px 20px;
+        background: #f4f4f4;
+    }
+
+    .header__search-btn{
+        color: #000;
+    }
+
+    .header__inp::placeholder{
+        font-size:11px;
+    }
+
+    .header__logo-link{
+        background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/files/logo_dd403d90-35ae-438f-9131-4789ecc14079_300x.png?v=1603189301");
+    }
+
+    .shop-count{
+        top: 0 !important;
+        transform: translate(50%,0) !important;
+    }
+
+    .bx-user{
+        display: none;
+    }
+
+    .bx-home{
+        display: block;
+    }
+
+    .header__btn--top{
+        display: block;
+    }
+
+    .header__btn-name{
+        display: inline-block;
+    }
+
+}
+
+
+@media screen and (max-width:650px){
+    .header__logo-link{
+        width: 100px;
+        height: 15px;
+        background-size: 100px 15px;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .header__logo-link{
+        width: 100px;
+        height: 15px;
+        background-size: 90px 15px;
+    }
+}   

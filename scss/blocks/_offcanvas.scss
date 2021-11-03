@@ -1,0 +1,22 @@
+.offcanvas{
+
+   &__header{
+       justify-content: center;
+       align-items: center;
+        min-height: 45px;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        background: #105caa;
+   }
+
+   &__close{
+       background-image: none;
+   }
+
+   &__close i{
+       font-size: 20px;
+   }
+}
+

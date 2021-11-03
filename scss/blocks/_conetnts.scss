@@ -1,0 +1,95 @@
+.conetnts {
+    height: 780px;
+    display: flex;
+    align-items: center;
+    
+    
+    &__text-box { 
+        max-width: 492px;
+        z-index: 1;
+    }
+
+    &__usd {
+        font-variant: small-caps;
+        color: #1477dd;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    &__arrows{
+        width: 100%;
+        z-index: 100;
+    }
+
+    .conetnts__arrow-btn{
+        top: 50%;
+        background: #adadad;
+        padding: 30px 22px;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        transition: background 0.4s ease;
+
+        &:hover{
+            background: #444343;
+        }
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+
+    sup{
+        font-weight: 700;
+        position: relative;
+        top: -5px;
+    }
+
+    &__desc {
+        color: $desc-color;
+        font-size: 13px;    
+        font-weight: 400;
+        margin-bottom: 53px;
+    }
+
+    &__btn {
+        border-radius: 40px;
+        background: $btn-bg;
+        padding: 12px 40px;
+        font-size: 11px;
+        font-weight: 700;
+        transition: background 0.4s ease;
+
+        &::before{
+            content: '';
+            display: inline-block;
+            margin-right: 9px;
+            width: 12px;
+            height: 14px;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUlJREFUSEvtltFNxDAQRN9UAFQAVMBRAVwHlAAVQAdQAlTAdQAdwHUAHRwdQAWDFjkiySWyE0WKQLdfiezs2x3b8YiZQjNxGQy2vQ+cAAsgnl8lrYc2MAhs+wJ4TMA66xO4kvRcWkAx2PYdcJtJHPBVCbwIbPsceEkJv4CbkDi9x9g9sJfel5Kqsd4aSsGR6AwI6ELSpp7R9hHwluCx5stc16Vgp0QPkqLbrbAdXV+ngQNJse7jO27J3Ctj2nhPpXJnOx4Aru+D7Do3wOmMxiaKMzplbCQd1xO2wfWqpwRHroYKJeAPoDqbl8BhT0W5eYPBa0mhBLarY9XFzs37O+Cp1npwxzvwWAV2Uv8q1/ovj5W077ud1P9f6lNJYY9+YssI2A4/1XcDjd1w75Iad3wXOEx6+OcwcFNEeK9V24Nlrc8U5K4cs4G/AQwPtB/XH9xgAAAAAElFTkSuQmCC");
+            background-size: 12px 14px;
+            background-repeat: no-repeat;
+            transform: translate(0,2px);
+        }
+
+        &:hover{
+            background: #105caa;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        left: 0;
+        top: 0;
+    }
+}
+
+.smartphone{
+    
+}
