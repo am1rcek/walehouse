@@ -1,0 +1,23 @@
+.macbook {
+
+
+    &__text-box {
+        max-width: 600px;
+        left: 50%;
+        top: 30px;
+        transform: translate(-50%,0);
+    }
+
+    &__desc {
+        font-weight: 300;
+        line-height: 20px;
+        margin-bottom: 35px;    
+        font-size: 16px;
+    }
+
+    &__btn {
+        background: #f8891b;
+    }
+
+}
+
