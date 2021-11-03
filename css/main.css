@@ -607,6 +607,7 @@ img {
 @media screen and (max-width: 768px) {
   .header__btns {
     position: fixed;
+    z-index: 999;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -828,18 +829,15 @@ img {
 }
 
 .conetnts {
-  height: 780px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100vh;
 }
 
 .conetnts__text-box {
   max-width: 492px;
   z-index: 1;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .conetnts__usd {
@@ -850,11 +848,14 @@ img {
 }
 
 .conetnts__arrows {
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   width: 100%;
   z-index: 100;
 }
 
-.conetnts .conetnts__arrow-btn {
+.conetnts__arrow-btn {
   top: 50%;
   background: #adadad;
   padding: 30px 22px;
@@ -865,7 +866,7 @@ img {
   transition: background 0.4s ease;
 }
 
-.conetnts .conetnts__arrow-btn:hover {
+.conetnts__arrow-btn:hover {
   background: #444343;
 }
 
@@ -917,12 +918,88 @@ img {
   background: #105caa;
 }
 
-.conetnts__img {
+.conetnts__img-box {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100vh;
   left: 0;
   top: 0;
+}
+
+.conetnts__img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-item,
+.hero__slide {
+  height: 100vh;
+}
+
+@media screen and (max-width: 1150px) {
+  .conetnts__img {
+    height: auto;
+  }
+  .conetnts__text-box {
+    top: 25%;
+  }
+  .conetnts {
+    height: 71vh;
+  }
+  .conetnts__img-box {
+    height: 71vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .conetnts {
+    height: 62vh;
+  }
+  .conetnts__img-box {
+    height: 62vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conetnts__text-box {
+    display: none;
+  }
+  .conetnts {
+    height: 48vh;
+  }
+  .conetnts__img-box {
+    height: 48vh;
+  }
+  .conetnts__arrow-btn {
+    padding: 9px 7px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .conetnts {
+    height: 35vh;
+  }
+  .conetnts__img-box {
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .conetnts {
+    height: 29vh;
+  }
+  .conetnts__img-box {
+    height: 29vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .conetnts {
+    height: 22vh;
+  }
+  .conetnts__img-box {
+    height: 22vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,12 @@
 .conetnts {
-    height: 780px;
-    display: flex;
-    align-items: center;
+    height: 100vh;
     
     
     &__text-box { 
         max-width: 492px;
         z-index: 1;
+        top: 50%;
+        transform: translate(0,-50%);
     }
 
     &__usd {
@@ -17,11 +17,13 @@
     }
 
     &__arrows{
+        top: 50%;
+        transform: translate(0,-50%);
         width: 100%;
         z-index: 100;
     }
 
-    .conetnts__arrow-btn{
+    &__arrow-btn{
         top: 50%;
         background: #adadad;
         padding: 30px 22px;
@@ -81,15 +83,91 @@
         }
     }
 
-    &__img{
+    &__img-box{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: 100vh;
         left: 0;
         top: 0;
     }
+
+    &__img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
 }
 
-.smartphone{
-    
+.carousel-item,
+.hero__slide{
+    height: 100vh;
+}
+
+@media screen and (max-width:1150px){
+    .conetnts__img{
+        height: auto;
+    }
+
+    .conetnts__text-box{
+        top: 25%;
+    }
+
+    .conetnts{
+        height: 71vh;
+    }
+    .conetnts__img-box{
+        height: 71vh;
+    }
+}
+
+@media screen and (max-width:992px){
+    .conetnts{
+        height: 62vh;
+    }
+    .conetnts__img-box{
+        height: 62vh;
+    }
+}
+
+@media screen and (max-width:768px){
+    .conetnts__text-box{
+        display: none;
+    }
+
+    .conetnts{
+        height: 48vh;
+    }
+    .conetnts__img-box{
+        height: 48vh;
+    }
+
+    .conetnts__arrow-btn{
+        padding: 9px 7px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .conetnts{
+        height: 35vh;
+    }
+    .conetnts__img-box{
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width:460px){
+    .conetnts{
+        height: 29vh;
+    }
+    .conetnts__img-box{
+        height: 29vh;
+    }
+}
+
+@media screen and (max-width:360px){
+    .conetnts{
+        height: 22vh;
+    }
+    .conetnts__img-box{
+        height: 22vh;
+    }
 }
