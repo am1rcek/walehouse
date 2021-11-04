@@ -6,7 +6,29 @@ let elEye = document.querySelector(".eye");
 let elIconEye1 = document.querySelector(".bi-eye");
 let elIconEye2 = document.querySelector(".bi-eye-slash");
 let elInp = document.querySelector(".login__input");
+const elProductBtn = document.querySelectorAll(".products__btn");
+const elSliderBtn =  document.querySelectorAll(".carousel__btn");
 
+elProductBtn.forEach(function(item) {
+    item.addEventListener("click", function() {
+        let clickedBtn = item;
+        elProductBtn.forEach(function(item){
+            item.classList.remove("products__btn--active")
+        });
+        clickedBtn.classList.add("products__btn--active")
+    })
+})
+
+
+elSliderBtn.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        let activeBtn = btn;
+        elSliderBtn.forEach(function(btn){
+            btn.classList.remove("carousel__btn--active")
+        });
+        activeBtn.classList.add("carousel__btn--active")
+    })
+})
 
 elSettingsBnt.addEventListener("click", function () {
     elAccounModal.classList.toggle("open-accoun-modal");

@@ -1,0 +1,63 @@
+.products {
+
+    padding-top: 66px;
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #222;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-family: $roboto-font;
+        font-size: 13px;
+        color: #666;
+        font-weight: 400;
+        width: 44%;
+        line-height: 20px;
+        margin-bottom: 45px;
+    }
+
+    &__btn-list{
+        margin-bottom: 50px;
+    }
+
+    &__btn-item:not(:last-child){
+        margin-right: 10px;
+    }
+
+    &__btn-item{
+        width: auto;
+    }
+
+    &__btn {
+        background: #f0f0f0;
+        font-size: 11px;
+        font-family: $roboto-font;
+        padding: 11px 0;
+        width: 140px;
+        border: none;
+        color: #222;
+        border-radius: 40px;
+        transition: all 0.4s ease;
+    }
+
+    &__btn--active,
+    &__btn:hover{
+        color: #fff !important;
+        background: #105caa;
+    }
+
+    &__caruserl-item{
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .products__btn-item{
+        margin-bottom: 20px;
+    }
+}

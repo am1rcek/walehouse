@@ -1,0 +1,65 @@
+.add-to-cart {
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%,10px);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 11;
+
+    &__title {
+        font-size: 15px;
+        font-weight: 500;
+        color: #444;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    &__item i{
+        color: #dbdbdb;
+        font-size: 12px;
+    }
+
+
+    &__money {
+        color: #222;
+        font-size: 13px;
+        margin-bottom: 19px;
+    }
+
+    
+
+    &__btn {
+        background: #f0f0f0;
+        font-size: 11px;
+        font-family: $roboto-font;
+        padding: 11px 0;
+        width: 140px;
+        border: none;
+        color: #222;
+        border-radius: 40px;
+        transition: all 0.4s ease;
+        margin: 0 auto;
+
+        &::before{
+            width: 15px;
+            height: 15px;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAX1JREFUSEvtltFRwzAMhmVnAMoEGKfvlAloN2AEmIBuACPABHQD2IB0A3hPHLFBO0AlTr30rnVo7IRwPbj6LWf5/6w/0lkKDrTUgbjQGmyMGQDAhdZ6BAADIsoQcd42gVbgNE2vmflZgB5ooZS6LYriNfYC0WBr7QMA3DcJV/BZDDwKPBwOx0T0VgkulVLT1WqVyXeSJGNmfgSAE/nWWk/yPF/vNV4yFCD7aZpmzHwFAEsiGiEibp8zxhit9bvAmTkry3IS0o3K2FrLldCTc276nai1VrK+kz0iOkXExY8y3ra5ycaq8F5i7Q5mHAuOjdu4sAOWHtVaSxFJj/a50Dl3vi24A/aqt09wrdpjwJ8AsOnNGwA423Ojxji/PoJgpdS8KIqx11Y1diju74D7+tGtMz6CuzpwtDrYx12t9c8drf7/VhPRJSLKeLRetUHAWivz1L4XqGutfTjndt74GliGgSRJZH42XSneuQURzfwZLDj69ASvP6O/JRzS/QK12B0uu4TTjwAAAABJRU5ErkJggg==");
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+            transition: all 0.4s ease;
+        }
+
+        &:hover{
+            color: #fff !important;
+        }
+
+        &:hover::before{
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUlJREFUSEvtltFNxDAQRN9UAFQAVMBRAVwHlAAVQAdQAlTAdQAdwHUAHRwdQAWDFjkiySWyE0WKQLdfiezs2x3b8YiZQjNxGQy2vQ+cAAsgnl8lrYc2MAhs+wJ4TMA66xO4kvRcWkAx2PYdcJtJHPBVCbwIbPsceEkJv4CbkDi9x9g9sJfel5Kqsd4aSsGR6AwI6ELSpp7R9hHwluCx5stc16Vgp0QPkqLbrbAdXV+ngQNJse7jO27J3Ctj2nhPpXJnOx4Aru+D7Do3wOmMxiaKMzplbCQd1xO2wfWqpwRHroYKJeAPoDqbl8BhT0W5eYPBa0mhBLarY9XFzs37O+Cp1npwxzvwWAV2Uv8q1/ovj5W077ud1P9f6lNJYY9+YssI2A4/1XcDjd1w75Iad3wXOEx6+OcwcFNEeK9V24Nlrc8U5K4cs4G/AQwPtB/XH9xgAAAAAElFTkSuQmCC");
+        }
+    }
+}

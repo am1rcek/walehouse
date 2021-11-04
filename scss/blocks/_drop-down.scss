@@ -44,7 +44,7 @@
 
     &__pages{
         padding: 20px 30px!important;
-        width: 250px;
+        width: 200px;
         top: 42px;
         left: 0;
         transform: translate(0,0);
@@ -57,7 +57,7 @@
 
     &__landing-pages{
         top: 0;
-        transform: translate(88%,0);
+        transform: translate(85%,0);
     }
 
     &__pages--item:hover  &__landing-pages{

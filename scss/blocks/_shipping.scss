@@ -1,0 +1,65 @@
+.shipping {
+    padding-top: 43px;
+    padding-bottom: 75px;
+    border-bottom: 1px solid #efefef;
+
+
+    &__item {
+        padding-top: 44px !important;
+        position: relative;
+
+        &::before{
+            content: "";
+            height: 29px;
+            position:absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+            
+            background-repeat: no-repeat;
+            
+
+        }
+
+        &:nth-child(1)::before{
+            width: 26px;
+            background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/files/policy-1_a56ec713-e9bd-41de-836b-b607e3932442_100x.png?v=1601622033");
+            background-size: 26px 29px;
+        }
+
+        &:nth-child(2)::before{
+            width: 34px;
+            background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/files/policy-2_086176f5-82d8-4fd9-b016-d82a35137557_100x.png?v=1601622053");
+            background-size: 34px 29px;
+        }
+
+        &:nth-child(3)::before{
+            width: 29px;
+            background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/files/policy-3_34039ac5-4426-4826-a810-38f2c72e41e3_100x.png?v=1601622066");
+            background-size: 29px 29px;
+        }
+    }
+
+    &__title {
+        color: #222;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        max-width: 320px;
+        font-family: $roboto-font;
+        font-size: 13px;
+        font-weight: 400;
+        color: #666;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    .shipping__item{
+       padding-left: 0 !important;
+       padding-right: 0 !important;
+       margin-bottom: 25px;
+    }
+}

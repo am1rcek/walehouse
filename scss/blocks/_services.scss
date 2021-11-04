@@ -1,0 +1,23 @@
+.services {
+
+    &__col {
+        @include card-hover;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    &__img {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .services__col{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
