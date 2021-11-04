@@ -15,7 +15,7 @@
   <section class="hero">
     <header class="hero__header header">
       <div class="header__container container position-relative">
-        <div class="header__row d-flex align-items-center justify-content-between ">
+        <div class="header__row position-relative d-flex align-items-center justify-content-between ">
             <a class="header__logo-link" href="index.html"></a>
             <form class="header__form d-flex align-items-center justify-content-between" action="https://echo.htmlacademy.ru/" method="post">
               <label class="header__label" for="searched-keyword">
@@ -68,7 +68,7 @@
             <div class="header__burger-btn-box">
               <button class="header__burger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-menu'></i></button>
             </div>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-end w-3" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas__header offcanvas-header">
                 <button type="button" class="d-flex align-items-center justify-content-center p-0 offcanvas__close btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class='bx bx-x'></i></button>
               </div>
@@ -76,22 +76,141 @@
         </div>
       </div>
     </header>
-    <nav class="hero__nav nav">
+    <nav class="hero__nav nav position-relative">
       <ul class="d-flex align-items-center nav__list list-unstyled m-0">
         <li class="nav__item position-relative nav__item--active">
           <a class="nav__link text-decoration-none text-light" href="#">home</a>
         </li>
-        <li class="nav__item position-relative">
+        <li class="nav__item">
           <a class="nav__link text-decoration-none text-light" href="#">all demos<i class="bi bi-chevron-down"></i></a>
+          <div class="row justify-content-between nav__dropw-down drop-down position-absolute">
+            <ul class="drop-down__list list-unstyled p-0 col-xl-6 col-lg-6 col-md-12 col-xs-12">
+              <li class="drop-down__item">
+                <h2 class="drop-down__title">Homepage Electronic V1</h2>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 1</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 2</a>
+              </li> 
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 3</a>
+              </li> 
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 4</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 5</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 6</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 7</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 8</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none border-0" href="#">Homepage Electronic 9</a>
+              </li>
+            </ul>
+            <ul class="drop-down__list list-unstyled p-0 col-xl-6 col-lg-6 col-md-12 col-xs-12">
+              <li class="drop-down__item">
+                <h2 class="drop-down__title">Homepage Electronic V2</h2>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 10</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 11</a>
+              </li> 
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 12</a>
+              </li> 
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 13</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 14</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 15</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 16</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none" href="#">Homepage Electronic 17</a>
+              </li>
+              <li class="drop-down__item">
+                <a class="drop-down__link text-decoration-none border-0" href="#">Homepage Electronic 18</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="nav__item position-relative">
           <a class="nav__link text-decoration-none text-light" href="#">pages<i class="bi bi-chevron-down"></i></a>
+          <div class="nav__dropw-down  drop-down drop-down__pages position-absolute">
+            <ul class="drop-down__list drop-down__pages--list list-unstyled p-0">
+              <li class="drop-down__item drop-down__pages--item position-relative">
+                <a class="drop-down__link text-decoration-none" href="#">Landing Page</a> 
+                <div class="drop-down drop-down__landing-pages drop-down__pages position-absolute">
+                  <ul class="drop-down__list drop-down__pages--list list-unstyled p-0">
+                    <li class="drop-down__item">
+                      <a class="drop-down__link text-decoration-none" href="#">About Us</a> 
+                    </li>
+                    <li class="drop-down__item">
+                      <a class="drop-down__link text-decoration-none" href="#">Contact Us</a>
+                    </li> 
+                    <li class="drop-down__item">
+                      <a class="drop-down__link text-decoration-none border-0" href="#">FAQs Pages</a>
+                    </li> 
+                  </ul>
+                </div>
+              </li>
+              <li class="drop-down__item drop-down__pages--item">
+                <a class="drop-down__link text-decoration-none" href="#">Inner Pages</a>
+                <div class="drop-down drop-down__landing-pages drop-down__inner-page drop-down__pages position-absolute">
+                  <ul class="drop-down__list drop-down__pages--list list-unstyled p-0">
+                    <li class="drop-down__item">
+                      <a class="drop-down__link text-decoration-none" href="#">About Us</a> 
+                    </li>
+                    <li class="drop-down__item">
+                      <a class="drop-down__link text-decoration-none" href="#">Contact Us</a>
+                    </li> 
+                    <li class="drop-down__item">
+                      <a class="drop-down__link text-decoration-none border-0" href="#">FAQs Pages</a>
+                    </li> 
+                  </ul>
+                </div>
+              </li> 
+              <li class="drop-down__item drop-down__pages--item">
+                <a class="drop-down__link text-decoration-none border-0" href="#">Inner Pages</a>
+                <div class="drop-down drop-down__landing-pages drop-down__inner-pages drop-down__pages position-absolute">
+                  <ul class="drop-down__list drop-down__pages--list list-unstyled p-0">
+                    <li class="drop-down__item">
+                      <a class="drop-down__link text-decoration-none" href="#">About Us</a> 
+                    </li>
+                    <li class="drop-down__item">
+                      <a class="drop-down__link text-decoration-none" href="#">Contact Us</a>
+                    </li> 
+                    <li class="drop-down__item">
+                      <a class="drop-down__link text-decoration-none border-0" href="#">FAQs Pages</a>
+                    </li> 
+                  </ul>
+                </div>
+              </li> 
+            </ul>
+          </div>
         </li>
-        <li class="nav__item position-relative">
+        <li class="nav__item">
           <a class="nav__link text-decoration-none text-light" href="#">categories<i class="bi bi-chevron-down"></i></a>
+          
         </li>
         <li class="nav__item position-relative">
-          <a class="nav__link text-decoration-none text-light" href="#">blog<i class="bi bi-chevron-down"></i></a>
+          <a class="nav__link text-decoration-none text-light " href="#">blog<i class="bi bi-chevron-down"></i></a>
         </li>
       </ul>
     </nav>
