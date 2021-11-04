@@ -1,0 +1,59 @@
+.sign-modal {
+    padding: 15px;
+
+    &__title {
+        padding-bottom: 10px;
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: 700;
+        border-bottom: 1px solid #e5e5e8;
+        margin-bottom: 13px;
+        position: relative;
+
+        &::before{
+            content: "";
+            height: 1.5px;
+            width: 70%;
+            position:absolute;
+            left: 0;
+            bottom: 0;
+            background: $btn-bg;
+        }
+    }
+
+    &__desc {
+        font-size: 13px;
+        color: #666;
+        font-weight: 400;
+        font-family: $roboto-font;
+    }
+
+	&__dialog {
+        max-width: 830px !important;
+        padding: 15px !important;
+	}
+
+	&__btn-close {
+        background: none;
+
+        &:focus{
+                box-shadow: none;
+        }
+
+        &:hover i{
+            color: #105caa;
+            transform: rotate(180deg);
+        }
+	}
+
+    &__btn-close i{
+        color: #aaa;
+        font-size: 2rem;
+        transition: all 0.4s ease;
+    }
+}
+
+.modal-content{
+    padding: 50px 30px;
+}
+

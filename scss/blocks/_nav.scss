@@ -1,7 +1,6 @@
 .nav {
     background: #0c549f;
     padding: 15px 0 18px 0 ;
-    justify-content: center;
     border-top: 1px solid #276Cb2;
 
     &__item{
@@ -28,6 +27,7 @@
     &__item--active &__link{
         background: #105caa;
     }
+
 }
 
 .bi-chevron-down{
