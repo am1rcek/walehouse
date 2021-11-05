@@ -1,6 +1,7 @@
 .carousel {
 
-   
+     
+    
 
     &__item {
         width: auto;
@@ -21,5 +22,11 @@
 
     &__btn--active {
         background: #fd6666;
+    }
+}
+
+@media screen and (max-width:768px){
+    .carousel__list{
+        display: none;
     }
 }
