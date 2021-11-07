@@ -52,6 +52,7 @@
         grid-template-columns: repeat(3,380px);
         grid-template-rows: repeat(2,380px);
         grid-gap: 15px;
+        padding-bottom: 203px !important;
     }
 
     &__img1{
@@ -145,7 +146,6 @@
     .all-products__list{
         grid-template-columns: repeat(2,250px);
         grid-template-rows: repeat(3,250px);
-        padding-bottom: 203px !important;
     }
 }
 

@@ -1,0 +1,84 @@
+.footer {
+    padding: 50px;
+
+    &__list:last-child li:not(:first-child){
+        padding-left: 36px;
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 18px;
+            height: 18px;
+            color: #666;
+        }
+    }
+
+    &__item:not(:first-child){
+        margin-bottom: 7px;
+    }
+
+    &__title {
+        font-size: 1rem;
+        color: #222;
+        margin-bottom: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 13px;
+        color: #666;
+        font-family: $roboto-font;
+        font-weight: 400;
+    }
+
+    &__link--tel::before{
+        content: "\eb5b";
+        font-family: boxicons!important;
+        position:absolute;
+        left: 0;
+        font-size: 15px;
+    }
+
+    &__link--email::before{
+        content: "\f32f";
+        font-family: bootstrap-icons !important;
+        position:absolute;
+        left: 0;
+        font-size: 15px;
+    }
+
+    &__link-gps::before{
+        content: "\edb9";
+        font-family:boxicons !important;
+        position:absolute;
+        left: 0;
+        font-size: 15px;
+    }
+
+    &__link--date::before{
+        content: "\eea8";
+        font-family:boxicons !important;
+        position:absolute;
+        left: 0;
+        font-size: 15px;
+    }
+
+    &__bottom{
+        padding: 28px 0;
+         background: #f0f0f0;
+    }
+
+    &__bottom-desc{
+        font-family: $roboto-font;
+        font-size: 12px;
+        color: #666;
+        font-weight: 700;
+    }
+
+    &__bottom-img{
+        width: 240px !important;
+        height: 25px !important;
+    }
+}

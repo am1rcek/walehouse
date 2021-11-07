@@ -1,0 +1,33 @@
+.deals {
+
+    &__box{
+        right:15px;
+        top: 50%;
+        transform: translate(0,-50%);
+        z-index: 100;
+    }
+
+    &__item::before{
+        display: none;
+    }
+
+    &__add-to-cart{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.deals .bx{
+    color: #dfdf1a;
+}
+
+.deals .all-products__list{
+    padding-bottom: 0 !important;
+}
+
+@media screen and (max-width:768px){
+    .deals .all-products__item:nth-child(3){
+        display:  none;
+    }
+
+}
